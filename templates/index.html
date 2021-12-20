@@ -1,8 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
 <h1>Hello Mang!</h1>
 
-<p>Thi is shang chi bit{{nama}}!</p>
-<p>he loikes to eat: {{favorite_pizza}}</p>
+<p>This is my list{{nama}}!</p>
+<p>I like to eat: {{favorite_pizza}}</p>
 <h3>Favorite pizza:</h3>
 {% for topping in favorite_pizza %}
     {{ topping }}<br>
 {% endfor %}
+
+{% endblock %}
+
